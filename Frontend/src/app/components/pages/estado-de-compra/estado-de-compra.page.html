@@ -1,0 +1,124 @@
+<div id="container">
+  <header>
+    <ion-img class="logo" src="../../assets/icon/LogoB.png"alt=""> </ion-img>
+    <h1 class="Name">Glück</h1>
+    <div class="barra">
+      <h2>Menu<img src="../../assets/icon/MenuDes.svg" alt=""></h2>
+      <ul>
+          <li><a [routerLink]="['/profile']" >Perfil</a></li>
+          <li><a  >Términos de servicio</a></li>
+        <li><a >Cerrar sesión</a></li>
+      </ul>
+     
+  </div>
+  </header>
+    <div class="contain">
+      <ion-button (click)="goBack()" fill="clear" style= "position: fixed;
+      right: 272px;
+      top: 163px;
+      height: 58px;
+      z-index: 2;">
+          <ion-img src="../../assets/icon/atras.png"  style="width: 72px; height: 60px;"></ion-img>
+        </ion-button>
+      <div class="contenido">
+        
+        
+        <div class="progress-bar-container">
+          <div class="progress-bar"></div>
+        </div>
+      <div class="texto">
+        <p style="position: fixed;
+        color: #7030a0;
+        font-weight: 600;
+        text-align: justify;
+        bottom: 499px;
+        left: 115px;
+        font-size: 13px;">1.<br>Número de Compra </p>
+        <p style="position: fixed;
+        color: #7030a0;
+        font-weight: 600;
+        bottom: 499px;
+        left: 283px;
+        font-size: 17px;"><b>xxxx.</b></p>
+        <p style="position: fixed;
+        color: #7030a0;
+        font-weight: 600;
+        text-align: justify;
+        bottom: 440px;
+        left: 115px;
+        font-size: 13px;">2.</p>
+        <p style="position: fixed;
+        color: #7030a0;
+        font-weight: 600;
+        text-align: justify;
+        bottom: 340px;
+        left: 115px;
+        font-size: 13px;">3.<br> 
+        <a href="" style="position: relative;
+        color: #7030a0;
+        text-decoration: underline;
+        display: revert;
+        font-weight: bold;
+        z-index: 2;">Ver Mapa (Link)</a></p>
+        <p style="position: fixed;
+        color: #7030a0;
+        font-weight: 600;
+        text-align: initial;
+        bottom: 240px;
+        left: 115px;
+        font-size: 13px;">4.<br>Pedido Entregado</p>
+        <br>
+        <br>
+        <p style="position: fixed;
+        color: #7030a0;
+        font-weight: 600;
+        bottom: 181px;
+        left: 27px;
+        font-size: 13px;">¿Tu pedido fue entregado satisfactoriamente?</p>
+        <br>
+        <button style="position: fixed;
+        bottom: 138px;
+        left: 115px;
+        width: 60px;
+        height: 31px;
+        background-color: #7030a0;
+        color: white;
+        border-radius: 11px;">Si</button>
+        <button style="position: fixed;
+        bottom: 138px;
+        left: 178px;
+        width: 60px;
+        height: 31px;
+        color: #7030a0;
+        border-color: #7030a0;
+        border-style: solid;
+        border: 2px;
+        border-radius: 11px;">No</button>
+      </div>
+       
+
+      <ion-tabs>
+        <ion-tab-bar slot="bottom" class="tabBar">
+          <ion-tab-button tab="home" [routerLink]="['/tabs']">
+            <ion-icon src="../../assets/icon/Home.svg"></ion-icon>
+    
+          </ion-tab-button>
+          <ion-tab-button tab="Heart" [routerLink]="['/favs']">
+            <ion-icon src="../../assets/icon/Heart.svg"></ion-icon>
+          </ion-tab-button>
+    
+          <ion-tab-button tab="LogoHo" [routerLink]="['/category']">
+            <ion-icon src="../../assets/icon/LogoIc.svg" class="LogoIcono"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="Star" [routerLink]="['/points']">
+            <ion-icon src="../../assets/icon/Star.svg"></ion-icon>
+          </ion-tab-button>
+    
+          <ion-tab-button tab="search" [routerLink]="['/atencion-a-cliente']">
+            <ion-icon src="../../assets/icon/Quest.svg"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </div>
+    
+    </div>

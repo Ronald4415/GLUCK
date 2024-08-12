@@ -1,0 +1,108 @@
+<div id="container">
+  <header>
+    <!-- <ion-img class="logo" src="../../../../assets/img/LogoB.png" alt=""> </ion-img> -->
+    <h1 class="Name">Glück</h1>
+    <div class="barra">
+      <!-- <h2>Menu<img src="../../../../assets/img/MenuDes.svg" alt=""></h2> -->
+      <ul>
+        <!-- <li><a [routerLink]="['/profile']">Perfil</a></li> -->
+        <li><a>Términos de servicio</a></li>
+        <li><a>Cerrar sesión</a></li>
+      </ul>
+
+    </div>
+  </header>
+  <div class="contain">
+    <ion-button (click)="goBack()" fill="clear" style="position: fixed;
+      right: 272px;
+      top: 163px;
+      height: 58px;
+      z-index: 2;">
+      <!-- <ion-img src="../../../../assets/img/atras.png" style="width: 72px; height: 60px;"></ion-img> -->
+    </ion-button>
+    <div class="contenido">
+
+      <div class="text1">
+        <p style="font-weight: 900; font-size:14px; color: #7030a0; margin-bottom: 10px; ">¡Invitar Amigos!</p>
+
+        <p style="font-size:14px; color: #7030a0; margin-bottom: 10px; font-weight:bolder; ">Y acumula Happy puntos</p>
+
+        <p style="font-size:13px; color: #7030a0; font-weight:bolder; ">Por cada amigo registrado gana xxx puntos Happy.
+          Además tu amigo también ganará xxx Happy puntos.</p>
+      </div>
+
+      <div class="logos" style="
+    display: flex;
+    position: relative;
+    left: 67px;
+    top: 58px;
+    width: 244px;;">
+        <!-- <ion-img src="../../../../assets/img/face.png" style="margin-right: 10px;"></ion-img>
+        <ion-img src="../../../../assets/img/ig.png" style="margin-right: 10px;"></ion-img>
+        <ion-img src="../../../../assets/img/wha.png" style="margin-right: 10px;"></ion-img>
+        <ion-img src="../../../../assets/img/aña.png" style="margin-right: 10px;"></ion-img> -->
+      </div>
+
+      <div class="text2">
+        <p style="font-size: 13px;
+      width: 164px;
+      position: relative;
+      left: 95px;
+      top: 69px;
+      color: #7030a0; font-weight:bolder;">Comparte este código con tus amigos:</p>
+        <br>
+        <p style="font-size: 16px;
+      width: 164px;
+      position: relative;
+      left: 95px;
+      top: 56px;
+      color: #7030a0;
+      font-weight: bold;;">xxxxx</p>
+        <br>
+        <p style="font-size: 13px;
+      width: 164px;
+      position: relative;
+      left: 95px;
+      top: 42px;
+      color: #7030a0; font-weight:bolder;">O escanea este código:</p>
+        <!-- <ion-img src="../../../../assets/img/qr.png" style="margin: auto; -->
+      <!-- width: 41px;
+      position: relative;
+      top: 49px;">
+    </ion-img> -->
+        <br>
+        <button style="
+      position: relative;
+      top: 36px;
+      background-color: #7030a0;
+      color: white;
+      width: 187px;
+      height: 28px;
+      border-radius: 11px;">Sincronizar mis contactos</button>
+      </div>
+
+      <ion-tabs>
+        <ion-tab-bar slot="bottom" class="tabBar">
+          <!-- <ion-tab-button tab="home" [routerLink]="['/tabs']">
+            <ion-icon src="../../../../assets/img/Home.svg"></ion-icon> -->
+          <!--
+          </ion-tab-button>
+          <ion-tab-button tab="Heart" [routerLink]="['/favs']">
+            <ion-icon src="../../../../assets/img/Heart.svg"></ion-icon>
+          </ion-tab-button> -->
+
+          <!-- <ion-tab-button tab="LogoHo" [routerLink]="['/category']">
+            <ion-icon src="../../../../assets/img/LogoIc.svg" class="LogoIcono"></ion-icon>
+          </ion-tab-button> -->
+          <!-- <ion-tab-button tab="Star" [routerLink]="['/points']">
+            <ion-icon src="../../../../assets/img/Star.svg"></ion-icon>
+          </ion-tab-button> -->
+          <!-- [routerLink]="['/pages/atencion-a-cliente']" -->
+          <ion-tab-button tab="search">
+            <!-- <ion-icon src="../../../../assets/img/Quest.svg"></ion-icon> -->
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </div>
+
+  </div>

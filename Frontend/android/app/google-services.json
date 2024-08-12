@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "587999903751",
+    "project_id": "happy-gluck-2024",
+    "storage_bucket": "happy-gluck-2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587999903751:android:0819e8b75e7c3efd5b6aa2",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB92KnSPTCjMHSLzKoDpqcpbLZ0zzzoaSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

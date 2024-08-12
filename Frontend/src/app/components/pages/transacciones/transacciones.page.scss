@@ -1,0 +1,289 @@
+@media screen and (min-width: 90px) {
+    #container {
+      text-align: center;
+      background-image: url(../../assets/icon/Fondo.png) ;
+      background-color: #7030a0;
+      background-repeat: no-repeat;
+      background-size: cover;  
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-50%);
+      font-family: Montserrat;
+      overflow: auto;
+    }
+    
+    #container strong {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    
+    #container p {
+      font-size: 16px;
+      line-height: 22px;
+    
+      color: #8c8c8c;
+    
+      margin: 0;
+    }
+    
+
+    #container a {
+      text-decoration: none;
+      display: contents;
+    }
+    //fuentes 
+    @font-face {
+      font-family: Magic;
+      src: url(Magical.ttf);
+    }
+    
+    @font-face {
+      font-family: Montserrat;
+      src: url(Montserrat.ttf);
+    }
+    
+    //logo Happy
+    .logo {
+    
+    width: 68px;
+    height: 68px;
+    margin: auto;
+    position:relative;
+    top: 42px;
+    }
+    
+    //nombre Happy
+    .Name{
+    
+      color: white;
+      font-size: 30px;
+      margin-top: 38px;
+      font-family: Magic;
+      
+      }
+    
+      //contenedor blanco
+    .contain{
+    
+      margin: auto;
+      background-color: white;
+      height: 75%;
+      border-radius: 42px;
+      position: relative;
+    }
+
+    //segmentos
+
+    ion-segment {
+      ion-segment-button {
+        color: #8e44ad; /* Color de las letras de los botones */
+ 
+    
+        /* Estilo del borde de los botones */
+
+        &.segment-button-checked {
+ 
+          --color-checked:  #8e44ad;
+        }
+      }
+    }
+    
+
+    //imagenes
+    
+    ion-thumbnail {
+      --size: 90px;
+      --border-radius: 5px;
+      left: 39px;
+      position: relative;
+      top: 115px;
+    }
+    
+    //tabs
+    .tabBar{
+    
+      background-color: white;
+      height: 10%;
+      position: relative;
+      bottom: 7%;
+      border-radius: 42px;
+      border-top: 0px;
+    }
+    
+    //icono del logo en la parte de tabs 
+    .LogoIcono{
+    
+      font-size: 60px;
+    
+    }
+
+//Menu desplegable
+.barra {
+  /**Alto y ancho de donde se va a activar cuando pase el mouse**/
+  width:70px;
+  height:70px;
+  /*Para que este siempre en la misma parte de la pantalla aunque se haga scroll*/
+  position: relative;
+  top: 45px;
+  left: 10px;
+  position:fixed;
+  /*Tiempo en el que va a transitar la animacion*/
+  transition: .4s all ;
+  /*este arriba de todo en la pantalla*/
+  z-index: 3;  
+}
+
+.barra ul{
+  /*solucionar espacios no deseados*/
+  padding:0px;
+  text-align: center;
+      
+}
+.barra  li{
+  /*Velocidad de transicion del contenido*/
+  transition:all .3s;
+  list-style: none; 
+}
+
+.barra a{
+  text-decoration: none;
+  
+  font-weight: normal;
+  
+  /*La letra crece con el menu de esta manera no se va a ver como se ajusta al margen mientras crece*/
+  transition: .3s all ;
+  /*Se ocultan los elementos*/
+  font-size: 0px;
+  padding:0px;
+}
+
+.barra  h2{
+text-align: center;
+color: rgb(255, 255, 255);
+padding: 11px;
+padding-bottom: 0px;
+font-size: 0px;
+font-family: magic;
+}
+
+
+.barra:hover{
+  /*Tamaño cuando el cursor señale la barra*/
+  width: 50%;
+  height: 40vh;
+  /*Color*/
+  background: #56257bf2;
+  /*border*/
+  border-radius: 20px;
+}
+.barra:hover h2{
+  /*posicion dentro de barra del h2*/
+  font-size: 45px;
+}
+.barra:hover a{ 
+  font-size:17px ;
+  color:rgb(255, 255, 255);
+  /*Se usa el display block para que el enlace respete el margin*/
+  display: block;
+  padding:20px;
+}
+.barra:hover img{
+  /*Desaparecer la imagen*/
+  height:0px;
+}
+
+
+.barra:hover li{
+  border-top:1px solid #ffffff;
+  /*Espacios entre las lineas y el contenido*/
+  
+  width: 100%;
+  padding: 4%;
+      
+}
+.barra:hover ul:last-of-type{
+
+  border-bottom: 1px solid #ffffff;
+}
+
+.barra:hover a:hover{ 
+  font-size: 25px;
+  padding: 30px 0px; 
+  background: #7030a0; 
+}
+
+
+
+    }
+    
+     //@media para que sea adaptativo
+    
+      /* Estilos para pantallas más pequeñas */
+      @media screen and (max-height: 714px) {
+          
+        //contenedor blanco
+      .contain{
+      
+        margin: auto;
+        background-color: white;
+        height: 72%;
+        border-radius: 42px;
+      }
+      
+      //tabs
+      .tabBar{
+      
+        background-color: white;
+        height: 10%;
+        position: relative;
+        bottom: 7%;
+        border-radius: 42px;
+        border-top: 0px;
+      }
+      
+      //icono del logo en la parte de tabs 
+      .LogoIcono{
+      
+        font-size: 60px;
+      
+      }
+    
+    }
+    
+    
+    /* Estilos para pantallas más pequeñas */
+    @media screen and (max-height: 575px) {
+    
+       //contenedor blanco
+       .contain{
+      
+        margin: auto;
+        background-color: white;
+        height: 72%;
+        border-radius: 42px;
+      }
+      
+      //tabs
+      .tabBar{
+      
+        background-color: white;
+        height: 10%;
+        position: relative;
+        bottom: 4%;
+        border-radius: 42px;
+        border-top: 0px;
+      }
+      
+      //icono del logo en la parte de tabs 
+      .LogoIcono{
+      
+        font-size: 60px;
+      
+      }
+    
+    
+    }

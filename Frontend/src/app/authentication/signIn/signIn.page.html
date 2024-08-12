@@ -1,0 +1,78 @@
+<ion-content fullscreen>
+  <ion-row>
+    <div id="container">
+      <ion-img class="logo" src="../../../assets/img/LogoB.png" alt="LOGO GLUCK"></ion-img>
+      <h1 class="gluckName">Glück</h1>
+      <div class="contain">
+
+        <form class="login" [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+          <ion-row class="text-center">
+            <ion-col size="12">
+              <input type="text" class="I2" [attr.placeholder]="'E-mail/Usuario'" formControlName="email" required>
+              <span *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+                <ion-row>
+                  <ion-col size="12">
+                    <ion-label color="danger" *ngIf="loginForm.controls.email.errors.required">
+                      * Este campo es obligatorio!.
+                    </ion-label>
+                  </ion-col>
+                  <ion-col size="12">
+                    <ion-label color="danger" *ngIf="loginForm.controls.email.errors.pattern">
+                      * Es obligatorio un correo eletrónico!.
+                    </ion-label>
+                  </ion-col>
+                </ion-row>
+              </span>
+            </ion-col>
+
+            <ion-col size="12">
+              <input type="password" class="I2" [attr.placeholder]="'Contraseña'" formControlName="password" required>
+              <span *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+                <ion-row>
+                  <ion-col size="12">
+                    <ion-label color="danger" *ngIf="loginForm.controls.password.errors.required">
+                      * Este campo es obligatorio!.
+                    </ion-label>
+                  </ion-col>
+                </ion-row>
+              </span>
+            </ion-col>
+
+            <ion-col size="12">
+              <label class="checkBoxLabel">
+                <input type="checkbox" class="check">
+                Recuérdame
+              </label>
+            </ion-col>
+
+            <div id="logos">
+              <a class="face">
+                <ion-img src="../../../assets/img/FaceLogo.png" alt=""> </ion-img>
+              </a>
+              <a class="goo">
+                <ion-img src="../../../assets/img/googleLogo.png" alt=""> </ion-img>
+              </a>
+            </div>
+
+            <ion-col size="12">
+              <ion-button color="none" class="button1" type="submit" [disabled]="!(loginForm.valid && loginForm.dirty)">
+                Ingresar
+              </ion-button>
+            </ion-col>
+
+          </ion-row>
+        </form>
+
+        <ion-row class="text-center login">
+          <ion-col size="12" class="newt-link">
+            <a [routerLink]="['/auth/signUp']">Crear cuenta</a>
+          </ion-col>
+          <!-- <ion-col size="12" class="newt-link">
+            <a [routerLink]="['/auth/recovery']">Olvidé mi contraseña</a>
+          </ion-col> -->
+        </ion-row>
+
+      </div>
+    </div>
+  </ion-row>
+</ion-content>

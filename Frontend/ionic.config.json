@@ -1,0 +1,7 @@
+{
+  "name": "Gluck",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

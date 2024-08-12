@@ -1,0 +1,117 @@
+/* Container Styles */
+#container {
+  text-align: center;
+  background: #7030a0 url(../../../assets/img/Fondo.png) no-repeat center/cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  font-family: Montserrat;
+  transform: translateY(-50%);
+  overflow: auto;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: underline;
+}
+
+/* Logo Styles */
+.logo {
+  width: 68px;
+  height: 68px;
+  margin: auto;
+  position: relative;
+  top: 42px;
+}
+
+/* Input and Button Styles */
+.I2,
+.button1 {
+  border: 2px solid #7030a0;
+  border-radius: 20px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+.I2 {
+  background-color: white;
+  color: #7030a0;
+}
+
+.button1 {
+  background-color: #7030a0;
+  color: #fff;
+  font-size: 15px;
+}
+
+/* Logos Container Styles */
+#logos {
+  width: 130px;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Icon Styles */
+.goo,
+.face {
+  position: relative;
+}
+
+.goo {
+  left: 40px;
+}
+
+.face {
+  left: 20px;
+}
+
+/* White Container Styles */
+.contain {
+  margin: auto;
+  background-color: white;
+  height: 75%;
+  border-radius: 42px;
+}
+
+/* Login Container Styles */
+.login {
+  position: relative;
+  top: 15%;
+  width: 100%;
+}
+
+/* Brand Name Styles */
+.gluckName {
+  color: white;
+  font-size: 30px;
+  margin-top: 38px;
+  font-family: Magic;
+}
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+  background-color: white;
+  margin-right: 5px;
+  border-radius: 200px;
+}
+
+.checkBoxLabel {
+  color: black;
+  font-size: 16px;
+}

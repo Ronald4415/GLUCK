@@ -1,0 +1,87 @@
+<div id="container">
+  <header>
+    <ion-img class="logo" src="../../../../assets/img/LogoB.png" alt=""></ion-img>
+    <h1 class="Name">Glück</h1>
+    <div class="barra">
+      <h2>Menu<img src="../../../../assets/img/MenuDes.svg" alt=""></h2>
+      <ul>
+        <li><a [routerLink]="['/pages/profile']">Perfil</a></li>
+        <li><a>Términos de servicio</a></li>
+        <li><a [routerLink]="['/auth/']">Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </header>
+
+  
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom" class="tabBar">
+      <ion-tab-button tab="tabs" [routerLink]="['/pages/tabs']">
+        <ion-icon src="../../../../assets/img/Home.svg"></ion-icon>
+
+      </ion-tab-button>
+      <ion-tab-button tab="favs" [routerLink]="['/pages/favs']">
+        <ion-icon src="../../../../assets/img/Heart.svg"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button tab="category" [routerLink]="['/pages/category']">
+        <ion-icon src="../../../../assets/img/LogoIc.svg" class="LogoIcono"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="points" [routerLink]="['/pages/points']">
+        <ion-icon src="../../../../assets/img/Star.svg"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button tab="atencion-a-cliente" [routerLink]="['/pages/atencion-a-cliente']">
+        <ion-icon src="../../../../assets/img/Quest.svg"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+
+  <div class="contain">
+    <div class="contenido">
+      <br><br>
+      <h1 style="color: black;">Agregar producto</h1>
+      <div class="row">
+        <div class="col-12">
+          <form [formGroup]="signupForm">
+
+            <ion-col size="12">
+              <br />
+              <ion-row class="text-center">
+                <ion-col size="12" class="text-of">
+                  <input class="input_" type="text" placeholder="Type offer" formControlName="typeOffer">
+                </ion-col>
+                <ion-col size="12" class="text-of">
+                  <input class="input_" type="text" placeholder="Descripción de la oferta..." formControlName="description">
+                </ion-col>
+                <ion-col size="12" class="text-of">
+                  <input class="input_" type="text" placeholder="Dirección..." formControlName="address">
+                </ion-col>
+                <ion-col size="12" class="text-of">
+                  <input class="input_" type="text" placeholder="Tiempo de ejecución..." formControlName="time">
+                </ion-col>
+                <ion-col size="12" class="text-of">
+                  <input type="file" class="input-file-dark" placeholder="Foto" formControlName="photo"
+                    (change)="onFileSelected($event)" id="fileInput">
+                </ion-col>
+              </ion-row>
+            </ion-col>
+
+            <ion-col size="12">
+              <ion-row>
+                <ion-col size="12">
+                  <ion-button color="warning" class="log_in" type="submit" expand="block" (click)="handleSubmit()">
+                    Publicar
+                  </ion-button>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

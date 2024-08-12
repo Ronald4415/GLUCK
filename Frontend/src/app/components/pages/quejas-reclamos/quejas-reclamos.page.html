@@ -1,0 +1,79 @@
+
+<div id="container">
+  <header>
+    <ion-img class="logo" src="../../assets/icon/LogoB.png"alt=""> </ion-img>
+    <h1 class="Name">Glück</h1>
+    <div class="barra">
+      <h2>Menu<img src="../../assets/icon/MenuDes.svg" alt=""></h2>
+      <ul>
+          <li><a [routerLink]="['/profile']" >Perfil</a></li>
+          <li><a  >Términos de servicio</a></li>
+        <li><a >Cerrar sesión</a></li>
+      </ul>
+     
+  </div>
+  </header>
+    <div class="contain">
+      <ion-button (click)="goBack()" fill="clear" style= "position: fixed;
+      right: 272px;
+      top: 163px;
+      height: 58px;
+      z-index: 2;">
+          <ion-img src="../../assets/icon/atras.png"  style="width: 72px; height: 60px;"></ion-img>
+        </ion-button>
+      <div class="contenido">
+        
+       <div style="position: relative;">   
+        <P class="text1">Crear PQRS</P>
+        <br>
+        <p class="text2">Asunto:</p>
+        <input type="text" class="input1" style="z-index: 3;">
+        <br>
+        <p  class="text3">Numero de</p>
+        <p class="text3-1">compra:</p>
+        <input type="text" class="input2" style="z-index: 3;">
+        <br>
+        <br>
+        <p class="text4">Descripcion:</p>
+        <br>
+        <input type="text"   class="input3" style="z-index: 3;">
+        <br>
+        <input type="submit" class="button1"></div> 
+        <span><a [routerLink]="['/estado-pqrs']" style="top: 206px;
+          left: 55px;
+          display: inherit;
+          font-size: 13px;
+          font-weight: bold;
+          text-decoration: underline;
+          position: relative;
+          color: #7030a0;
+          z-index: 3;">Consular Estado PQRS</a></span>
+      </div>
+
+
+
+      <ion-tabs>
+        <ion-tab-bar slot="bottom" class="tabBar">
+          <ion-tab-button tab="home" [routerLink]="['/tabs']">
+            <ion-icon src="../../assets/icon/Home.svg"></ion-icon>
+    
+          </ion-tab-button>
+          <ion-tab-button tab="Heart" [routerLink]="['/favs']">
+            <ion-icon src="../../assets/icon/Heart.svg"></ion-icon>
+          </ion-tab-button>
+    
+          <ion-tab-button tab="LogoHo" [routerLink]="['/category']">
+            <ion-icon src="../../assets/icon/LogoIc.svg" class="LogoIcono"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="Star" [routerLink]="['/points']">
+            <ion-icon src="../../assets/icon/Star.svg"></ion-icon>
+          </ion-tab-button>
+    
+          <ion-tab-button tab="search" [routerLink]="['/atencion-a-cliente']">
+            <ion-icon src="../../assets/icon/Quest.svg"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </div>
+    
+

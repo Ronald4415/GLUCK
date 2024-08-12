@@ -1,0 +1,95 @@
+<div id="container">
+  <header>
+    <ion-img class="logo" src="../../assets/icon/LogoB.png"alt=""> </ion-img>
+    <h1 class="Name">Glück</h1>
+    <div class="barra">
+      <h2>Menu<img src="../../assets/icon/MenuDes.svg" alt=""></h2>
+      <ul>
+          <li><a [routerLink]="['/profile']" >Perfil</a></li>
+          <li><a  >Términos de servicio</a></li>
+        <li><a >Cerrar sesión</a></li>
+      </ul>
+     
+  </div>
+  </header>
+    <div class="contain">
+      <ion-button (click)="goBack()" fill="clear" style= "position: fixed;
+      right: 272px;
+      top: 163px;
+      height: 58px;
+      z-index: 2;">
+          <ion-img src="../../assets/icon/atras.png"  style="width: 72px; height: 60px;"></ion-img>
+        </ion-button>
+      <div class="contenido">
+        <div class="imgs" style="position: relative;">
+          <ion-thumbnail>
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            <span style="position: fixed;
+            text-align: justify;
+            left: 143px;
+            top: 269px;"><p>Tienda</p>
+            <p>Número de Compra </p>
+            <p>xxx</p>
+            <p>Fecha</p>
+            <ion-img src="../../assets/icon/flecha.png" style="width: 35px;
+            position: relative;
+            left: 165px;
+            bottom: 90px;"></ion-img>  </span>
+          </ion-thumbnail>
+          <br>
+          <ion-thumbnail>
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            <span style="    position: fixed;
+            text-align: justify;
+            left: 144px;
+            top: 384px;"><p>Tienda</p>
+            <p>Número de Compra </p>
+            <p>xxx</p>
+            <p>Fecha</p>
+            <ion-img src="../../assets/icon/flecha.png" style=" width: 35px;
+            position: relative;
+            left: 165px;
+            bottom: 93px;"></ion-img>  
+          </span>
+          </ion-thumbnail>
+          <br>
+          <ion-thumbnail>
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            <span style="position: fixed;
+            text-align: justify;
+            left: 144px;
+            top: 489px;"><p>Tienda</p>
+            <p>Número de Compra </p>
+            <p>xxx</p>
+            <p>Fecha</p>
+            <ion-img src="../../assets/icon/flecha.png" style="width: 35px;
+            position: relative;
+            left: 165px;
+            bottom: 93px;"></ion-img>  </span>
+          </ion-thumbnail>
+        </div>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom" class="tabBar">
+          <ion-tab-button tab="home" [routerLink]="['/tabs']">
+            <ion-icon src="../../assets/icon/Home.svg"></ion-icon>
+    
+          </ion-tab-button>
+          <ion-tab-button tab="Heart" [routerLink]="['/favs']">
+            <ion-icon src="../../assets/icon/Heart.svg"></ion-icon>
+          </ion-tab-button>
+    
+          <ion-tab-button tab="LogoHo" [routerLink]="['/category']">
+            <ion-icon src="../../assets/icon/LogoIc.svg" class="LogoIcono"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="Star" [routerLink]="['/points']">
+            <ion-icon src="../../assets/icon/Star.svg"></ion-icon>
+          </ion-tab-button>
+    
+          <ion-tab-button tab="search" [routerLink]="['/atencion-a-cliente']">
+            <ion-icon src="../../assets/icon/Quest.svg"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </div>
+    
+    </div>

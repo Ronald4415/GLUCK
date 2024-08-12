@@ -1,0 +1,69 @@
+<div id="container">
+  <header>
+    <ion-img class="logo" src="../../assets/icon/LogoB.png"alt=""> </ion-img>
+    <h1 class="Name">Glück</h1>
+    <div id="menu" class="barra">
+      <h2>Menu<img src="../../assets/icon/MenuDes.svg" alt=""></h2>
+      <ul>
+          <li><a [routerLink]="['/profile']" >Perfil</a></li>
+          <li><a  >Términos de servicio</a></li>
+        <li><a >Cerrar sesión</a></li>
+      </ul>
+     
+  </div>
+  </header>
+    <div class="contain">
+      <div class="contenido">
+        
+        
+       <span><ion-img src="../../assets/icon/avatarIc.png"></ion-img></span>
+        <a style="color: #7030a0; font-size:15px; text-decoration:underline; position: relative;  bottom: 18px;display: revert;">Editar</a>
+        <br>
+
+       <span id="editar">
+
+        <input type="text" placeholder="Nombres y Apellidos" style="z-index: 2;">
+        <br>
+        <br>
+        <input type="text" placeholder="Numero ID" style="z-index: 2;">
+        <br>
+        <br>
+        <input type="email" placeholder="E-mail" style="z-index: 2;">
+        <br>
+        <br>
+        <button class="BtG">Guardar</button>
+        <br>
+        <br>
+        <a href="" style="color: #7030a0;
+        font-size: 15px;
+        text-decoration: underline;
+        position: relative;
+        display: revert;">Agregar Intereses</a>
+
+       </span>
+
+      <ion-tabs>
+        <ion-tab-bar slot="bottom" class="tabBar">
+          <ion-tab-button tab="home" [routerLink]="['/tabs']">
+            <ion-icon src="../../assets/icon/Home.svg"></ion-icon>
+    
+          </ion-tab-button>
+          <ion-tab-button tab="Heart" [routerLink]="['/favs']">
+            <ion-icon src="../../assets/icon/Heart.svg"></ion-icon>
+          </ion-tab-button>
+    
+          <ion-tab-button tab="LogoHo" [routerLink]="['/category']">
+            <ion-icon src="../../assets/icon/LogoIc.svg" class="LogoIcono"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="Star" [routerLink]="['/points']">
+            <ion-icon src="../../assets/icon/Star.svg"></ion-icon>
+          </ion-tab-button>
+    
+          <ion-tab-button tab="search" [routerLink]="['/atencion-a-cliente']">
+            <ion-icon src="../../assets/icon/Quest.svg"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </div>
+    
+    </div>

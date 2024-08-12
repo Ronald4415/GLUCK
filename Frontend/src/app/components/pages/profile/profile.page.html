@@ -1,0 +1,70 @@
+<div id="container">
+  <header>
+    <ion-img class="logo" src="../../../../assets/img/LogoB.png" alt=""> </ion-img>
+    <h1 class="Name">Glück</h1>
+    <div class="barra">
+      <h2>Menu<img src="../../../../assets/img/MenuDes.svg" alt=""></h2>
+
+      <ul>
+        <li><a [routerLink]="['/pages/profile']">Perfil</a></li>
+        <li><a>Términos de servicio</a></li>
+        <li><a [routerLink]="['/auth/']">Cerrar sesión</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+
+  <div class="contain">
+
+    <div class="contenido">
+
+      <div class="card">
+        <div class="image">
+          <ion-img src="../../../../assets/img/avatarIc.png" [routerLink]="['/editar-perfil']"> </ion-img><span
+            class="nombre">
+            <p class="nomlet" style="color: #7030a0;">Nombre</p>
+            <a [routerLink]="['/categoria-cliente']" style="color: #7030a0;"><strong>categoria cliente</strong></a>
+          </span>
+          <span><ion-img src="../../../../assets/img/iconologo.png" class="imglh"></ion-img>
+            <p class="ph">puntos happy</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="buttonsP">
+        <button class="Bt1" [routerLink]="['/historial-compras']">Historial de compras</button>
+        <button class="Bt2" [routerLink]="['/metodos-pago']">Método de Pago</button>
+      </div>
+      <div class="buttonsB">
+        <button class="BtP" [routerLink]="['/invitar-amigos']">Invitar Amigos</button>
+        <button class="BtP" [routerLink]="['/premium']">Adquirir Plan Prémium</button>
+        <button class="BtP">Cerrar sesión</button>
+      </div>
+
+
+      <ion-tabs>
+        <ion-tab-bar slot="bottom" class="tabBar">
+          <ion-tab-button tab="home" [routerLink]="['/pages/tabs']">
+            <ion-icon src="../../../../assets/img/Home.svg"></ion-icon>
+
+          </ion-tab-button>
+          <ion-tab-button tab="Heart" [routerLink]="['/pages/favs']">
+            <ion-icon src="../../../../assets/img/Heart.svg"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button tab="LogoHo" [routerLink]="['/pages/category']">
+            <ion-icon src="../../../../assets/img/LogoIc.svg" class="LogoIcono"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="Star" [routerLink]="['/pages/points']">
+            <ion-icon src="../../../../assets/img/Star.svg"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button tab="search" [routerLink]="['/pages/atencion-a-cliente']">
+            <ion-icon src="../../../../assets/img/Quest.svg"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </div>
+
+  </div>

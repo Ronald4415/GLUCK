@@ -1,0 +1,120 @@
+#container {
+  text-align: center;
+  background-image: url(../../../assets/img/Fondo.png);
+  background-color: #7030a0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-50%);
+  overflow: auto;
+}
+
+#container strong {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+
+//logo Happy
+.logo {
+  width: 68px;
+  height: 68px;
+  margin: auto;
+  position: relative;
+  top: 25px;
+}
+
+//nombre Happy
+.Name {
+  color: white;
+  font-size: 30px;
+  margin-top: 18px;
+  font-family: Magic;
+}
+
+//contenedor blanco
+.contain {
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  height: 570px;
+  border-radius: 42px;
+}
+
+.contain label {
+  font-size: 13px;
+  color: #1F1E41;
+}
+
+.Top {
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.continue {
+  border: 2px;
+  border-style: solid;
+  border-color: #F2F4F9;
+  border-radius: 15px;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  background-color: #F2F4F9;
+  color: #1F1E41;
+  font-size: 20px;
+}
+
+
+.register {
+  position: relative;
+  bottom: 2%;
+}
+
+.register input {
+  background-color: #F2F4F9;
+  height: 35px;
+  border: 1px;
+  border-color: #F2F4F9;
+  color: black;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: #ac93bd 4.5px 4.5px 4.5px 0px;
+}
+
+
+//texto crear cuenta
+
+.Text1 {
+  margin-bottom: 0px;
+  position: relative;
+  top: 19px;
+  font-size: 34px;
+  font-family: Magic;
+  color: #1F1E41;
+
+}
+
+.continuar {
+  --background-color: #7030a0 !important;
+  --color: white;
+  box-shadow: none;
+  width: 132px;
+  margin-bottom: 13px;
+}
